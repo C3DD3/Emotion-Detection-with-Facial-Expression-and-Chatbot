@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project</title>
+    <!-- Bootstrap CSS -> kart işlemleri için, JS -> modallar ve açılır pencereler için, and jQuery ->odallar ve açılır pencereler için -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+
+     <style>
+        .navbar-brand {
+            margin-left: 10px;
+        }
+        .navbar img {
+            margin-right: 10px; 
+        }
+    </style>
+
+  </head>
+  <body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="{{ url_for('static', filename='Cedde.png') }}" alt="PNG Image" width="48" height="48">
+        <a class="navbar-brand" href="#"> CEDDE  </a>
+
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#" >Anasayfa</a> <!--anchor çapa başka bir linke referans vermek için kullandım-->
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('about') }}">Hakkımda</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+	<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark" style="background-image: url('https://images.unsplash.com/photo-1581215524789-83361d941827?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')">
+  		<div class="col-md-5 p-lg-5 mx-auto my-5"> <!--elemente css sınıflarını atamak için kullandım-->
+    		<h1 class="display-4 font-weight-normal font-italic text-white">HOŞGELDİNİZ</h1>
+        <br> 
+   			 <p class="lead font-weight-normal text-white font-italic font-weight-light">Yapmanız gereken ilk şey Sohbet Botu sayfasına yönlendirilmek için 'Sohbeti Başlat' butonuna tıklamak. Daha sonra sohbet botuna bir mesaj attığınızda önce açılan kamerayla duygunuzu algılayacak. Sonrasında ise <b>CEDDE </b> sizin anlık duygunuza göre size bir mesaj gönderecek. Konuşmanızın cümlelerinizle şekilleneceğini asla unutmayın.
+         </p>
+   			 
+  		</div>
+  		<div class="product-device shadow-sm d-none d-md-block"></div>
+  	<div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+	</div>
+
+<div class="section-heading text-center ">
+        <h2>Hadi Başlayalım...</h2>
+        
+        <hr>
+      </div>
+
+
+<div class="card text-center">
+  <div class="card-body">
+    <p class="card-title">İşlemi başlatacağınız butona tıklayınca karşınıza açılan sayfada mesaj botuna mesaj atınca yüzünüzü algılayacak bir kamera açılacak.<br> Daha sonra CEDDE ile sohbetinize başlamak için lütfen açılan sekmeyi kapatırken o anki duygunuzu koruyun.</p>
+   
+    <a href="/exec" class="btn btn-info btn-xl  badge-pill  mt-5 ">Sohbeti Başlat</a>
+  </div>
+  
+</div>
+
+<br> <!--sitenin altında bilgi vermek için-->
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      
+    </div>
+  </footer>
+
+
+
+  </body>
+</html>

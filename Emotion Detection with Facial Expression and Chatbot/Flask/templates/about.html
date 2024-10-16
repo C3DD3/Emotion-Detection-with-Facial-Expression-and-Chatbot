@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project</title>
+    <!-- Bootstrap CSS, JS, ve jQuery dahil ediyorum -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+     <style>
+        .navbar-brand {
+            margin-left: 10px; 
+        }
+        .navbar img {
+            margin-right: 10px; 
+        }
+    </style>
+
+</head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <img src="{{ url_for('static', filename='Cedde.png') }}" alt="PNG Image" width="48" height="48">
+
+        <a class="navbar-brand" href="#">CEDDE   </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url_for('index') }}">Anasayfa</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('about') }}">Hakkımda</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<header class="bg-light text-center py-5 mb-4">
+  <div class="container">
+    <h1 class="font-weight-light text-black">Ben Kimim ?</h1>
+     </div>
+</header>
+
+<div class="container">
+
+  <div class="row justify-content-center"> <!-- Yatayda ortalamak için -->
+    <div class="col-xl-4 col-md-6 mb-4"> <!--4 kolonluk büyük boyutlar için 6 kolon orta boyutlar için ve 4birimlik bir boşluklaa margin botton ekler--><!--Dikeyde ortalamak için-->
+      <div class="card border-0 shadow text-center"> 
+          <div class="d-flex justify-content-center"> 
+            <img src="https://media.licdn.com/dms/image/D4D03AQHydToJjuX2LQ/profile-displayphoto-shrink_800_800/0/1708415910433?e=1722470400&v=beta&t=QXLzSGTKdWNOVLpPe1Wv_R6QBa20757MYkqAhY4Yb-Q"class="card-img-top" alt="Eyüp Sinan Durdu">
+          </div>
+        <div class="card-body">
+          <h5 class="card-title mb-0">Eyüp Sinan Durdu</h5>
+          <div class="card-text text-black-50"><b>Bilgisayar Mühendisliği Öğrencisi</b><br>Bu projeyi 2024 Bahar Dönemi Bitirme projesi için geliştirdim.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </body>
+</html>
